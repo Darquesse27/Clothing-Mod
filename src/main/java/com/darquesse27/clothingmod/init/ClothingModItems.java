@@ -1,6 +1,7 @@
 package com.darquesse27.clothingmod.init;
 
 import com.darquesse27.clothingmod.ClothingMod;
+import com.darquesse27.clothingmod.clothing.TShirtClothing;
 import com.darquesse27.clothingmod.item.ClothesPieceItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -14,11 +15,9 @@ public class ClothingModItems {
 
     // Registering items
     public static final DeferredItem<Item> CLOTHES_PIECE_ITEM = ITEMS.register(ClothesPieceItem.NAME,
-            () -> new ClothesPieceItem(ClothesPieceItem.PROPERTIES));
-    // TODO
-    public static final DeferredItem<ArmorItem> CLOTHES_PIECE_TSHIRT = ITEMS.register("t_shirt",
-            () -> new ArmorItem(ClothingModArmorMaterials.CLOTHES_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(10)));
+            ClothesPieceItem::new);
+    public static final DeferredItem<ArmorItem> CLOTHES_PIECE_TSHIRT = ITEMS.register(TShirtClothing.NAME,
+            TShirtClothing::new);
 
     // Register function used for item registration
     public static void register(IEventBus eventBus) {

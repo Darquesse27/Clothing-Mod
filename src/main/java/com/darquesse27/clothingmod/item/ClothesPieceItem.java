@@ -4,10 +4,10 @@ import net.minecraft.world.item.Item;
 
 public class ClothesPieceItem extends Item {
 
-    public static Properties PROPERTIES = new Item.Properties();
-    public static String NAME = "clothes_piece";
+    private static final Properties PROPERTIES = new Item.Properties();
+    public static final String NAME = "clothes_piece";
 
-    public ClothesPieceItem(Properties properties) {
-        super(properties);
+    public ClothesPieceItem() {
+        super(PROPERTIES);
     }
 }
