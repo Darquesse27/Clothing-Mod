@@ -12,7 +12,7 @@ public class ClothingModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ClothingMod.MODID);
 
-    public static final DeferredItem<Item> CLOTHES_PIECE_ITEM = ITEMS.register("clothes_piece",
+    public static final DeferredItem<Item> CLOTHES_PIECE_ITEM = ITEMS.register(ClothesPieceItem.NAME,
             () -> new ClothesPieceItem(ClothesPieceItem.PROPERTIES));
 
     public static void register(IEventBus eventBus) {
