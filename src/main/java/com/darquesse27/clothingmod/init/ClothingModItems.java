@@ -1,7 +1,7 @@
 package com.darquesse27.clothingmod.init;
 
 import com.darquesse27.clothingmod.ClothingMod;
-import com.darquesse27.clothingmod.items.ClothesPieceItem;
+import com.darquesse27.clothingmod.item.ClothesPieceItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;

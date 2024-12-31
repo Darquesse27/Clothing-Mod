@@ -1,4 +1,4 @@
-package com.darquesse27.clothingmod.items;
+package com.darquesse27.clothingmod.item;
 
 import net.minecraft.world.item.Item;
 
