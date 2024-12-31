@@ -1,7 +1,7 @@
 package com.darquesse27.clothingmod;
 
 import com.darquesse27.clothingmod.init.ClothingModItems;
-import com.darquesse27.clothingmod.init.CreativeTabs;
+import com.darquesse27.clothingmod.init.ClothingModCreativeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -57,7 +57,7 @@ public class ClothingMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        CreativeTabs tabs = new CreativeTabs(event);
+        ClothingModCreativeTabs tabs = new ClothingModCreativeTabs(event);
         tabs.addCreative();
     }
 

@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:leather"
+    },
+    "#": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "#X#",
+    "X X"
+  ],
+  "result": {
+    "count": 4,
+    "id": "clothingmod:clothes_piece"
+  }
+}
